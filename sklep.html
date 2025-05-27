@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">Sklep</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Powrót</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Witaj w naszym sklepie!</h1>
+            <p>Tutaj znajdziesz nasze najlepsze produkty. Wybierz coś dla siebie!</p>
+            
+            <h2>Lista produktów</h2>
+            <div class="products">
+                <div class="product">
+                    <h3>Produkt 1</h3>
+                    <p>Opis produktu 1</p>
+                    <p>Cena: 100 PLN</p>
+                    <button onclick="dodajDoKoszyka('Produkt 1', 100)">Zamów teraz</button>
+                </div>
+
+                <div class="product">
+                    <h3>Produkt 2</h3>
+                    <p>Opis produktu 2</p>
+                    <p>Cena: 150 PLN</p>
+                    <button onclick="dodajDoKoszyka('Produkt 2', 150)">Zamów teraz</button>
+                </div>
+
+                <div class="product">
+                    <h3>Produkt 3</h3>
+                    <p>Opis produktu 3</p>
+                    <p>Cena: 200 PLN</p>
+                    <button onclick="dodajDoKoszyka('Produkt 3', 200)">Zamów teraz</button>
+                </div>
+            </div>
+
+            <h2>Koszyk zakupowy</h2>
+            <div id="koszyk">
+                <p>Twój koszyk jest pusty.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let koszyk = [];
+
+        function dodajDoKoszyka(nazwa, cena) {
+            koszyk.push({ nazwa, cena });
+            aktualizujKoszyk();
+        }
+
+        function aktualizujKoszyk() {
+            let koszykDiv = document.getElementById("koszyk");
+            if (koszyk.length === 0) {
+                koszykDiv.innerHTML = "<p>Twój koszyk jest pusty.</p>";
+            } else {
+                koszykDiv.innerHTML = "<ul>" + koszyk.map(item => `<li>${item.nazwa} - ${item.cena} PLN</li>`).join("") + "</ul>";
+            }
+        }
+    </script>
+</body>
+</html>
