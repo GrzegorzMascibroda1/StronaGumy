@@ -1,0 +1,197 @@
+/* Reset i ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C4C4C4; /* Główne tło strony */
+    color: #000000; /* Główny kolor tekstu */
+}
+
+/* Stylizacja nagłówka */
+header {
+    background-color: #057A38; /* Główny kolor */
+    color: #FFFFFF; /* Biały tekst */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Białe linki */
+    text-decoration: none;
+}
+
+/* Główna struktura */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.content {
+    flex: 3;
+    background-color: #FFFFFF; /* Białe tło */
+    padding: 20px;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Nagłówki */
+h1, h2 {
+    color: #225F48; /* Nagłówki w ciemniejszym zielonym odcieniu */
+}
+
+/* Stylizacja postu */
+.post {
+    border-bottom: 1px solid #C4C4C4; /* Subtelne oddzielenie */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Pasek boczny - wyszukiwarka */
+.search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search button {
+    width: 100%;
+    padding: 10px;
+    background-color: #057A38; /* Zielony przycisk */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Pasek boczny - listy */
+aside div ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside div ul li {
+    margin-bottom: 8px;
+}
+
+aside div ul li a {
+    text-decoration: none;
+    color: #000000; /* Czarny tekst */
+}
+
+/* Dodatkowe style dla linków po najechaniu */
+a:hover {
+    text-decoration: underline;
+    color: #225F48; /* Podświetlone linki w ciemniejszym zielonym */
+}
+
+/* Sekcja Sklep - wyróżniona */
+.shop {
+    background-color: #057A38; /* Zielone tło */
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Odstęp przed Categories */
+}
+
+.shop h2 a {
+    color: #FFFFFF; /* Biały tekst */
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.shop h2 a:hover {
+    color: #C4C4C4; /* Jasny kolor po najechaniu */
+}
+
+/* Stylizacja produktów */
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    color: #057A38;
+}
+
+.product p {
+    color: #000000;
+}
+
+.product button {
+    background-color: #057A38;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #225F48;
+}
+
+/* Stylizacja koszyka */
+#koszyk {
+    background-color: #C4C4C4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Stylizacja sekcji O nas */
+.about {
+    background-color: #FFFFFF; /* Białe tło dla lepszego kontrastu */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efekt podniesienia */
+    text-align: center;
+}
+
+.about h2 {
+    color: #057A38; /* Zielony nagłówek */
+    font-size: 28px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #000000; /* Czarny tekst */
+    line-height: 1.6; /* Lepsza czytelność */
+    margin-bottom: 15px;
+}
+
+/* Opcjonalnie: jeśli dodasz obrazek */
+.about img {
+    width: 150px; /* Możesz zmienić rozmiar */
+    border-radius: 5%; /* Zaokrąglony efekt */
+    margin-bottom: 15px;
+}
