@@ -76,9 +76,10 @@ h1, h2 {
 
 .search button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #057A38; /* Zielony przycisk */
     color: #FFFFFF;
+    margin-bottom: 10px;
     border: none;
     cursor: pointer;
 }
@@ -124,21 +125,25 @@ a:hover {
     color: #C4C4C4; /* Jasny kolor po najechaniu */
 }
 
-/* Stylizacja produktów */
-.products {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
+/* Stylizacja pojedynczego produktu */
 .product {
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ograniczenie szerokości dla lepszego wyglądu */
+    margin: 0 auto;
 }
 
+/* Stylizacja obrazka produktu */
+.product img {
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja tekstu w produkcie */
 .product h3 {
     color: #057A38;
 }
@@ -147,6 +152,7 @@ a:hover {
     color: #000000;
 }
 
+/* Stylizacja przycisku zamówienia */
 .product button {
     background-color: #057A38;
     color: #FFFFFF;
